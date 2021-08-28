@@ -1,0 +1,139 @@
+body{
+    height: 95vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.biker{
+    cursor: pointer;
+    width: 15%;
+    height: 35%;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+ 
+}
+.bikerJump{
+    animation: bikerJump 0.4s linear
+}
+@keyframes bikerJump{
+    0%{top: 350px;}
+    30%{top: 260px;}
+    50%{top: 210px;}
+    80%{top: 260px;}
+    100%{top: 350px;}
+}
+
+
+.devil{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    top: 485px;
+    left: -60px;
+}
+.devilMove{
+    animation:devilMove 2s linear infinite
+}
+@keyframes devilMove{
+    from{left: 1300px;}
+    to{left: -60px;}
+}
+
+
+.tree{
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    top:215px;
+    left: 90%;
+    animation:none;
+}
+.treeMove{
+    animation:move 3.5s linear infinite;
+}
+@keyframes move{
+    from{left: 90%}
+    to{left:-100px}
+}
+.tree_2{
+    position: absolute;
+    width: 10%;
+    height: 19%;
+    top: 150px;
+    left: 90%;
+}
+.treeMove_2{
+    animation:move_2 3s linear infinite;
+}
+@keyframes move_2{
+    from{left: 90%}
+    to{left:-100px}     
+}
+
+
+.road{
+    position: absolute;
+    top: 395px;
+    width: 1360px;
+    height: 230px;
+    border:#777676 5px;
+    color:#fff;
+    background-color:#9b9b9b
+}
+
+.green{
+    position: absolute;
+    top: 40px;
+    width: 1360px;
+    height: 360px;
+    border:#fff 5px;
+    color:#fff;
+    background-color:#004d33
+}
+
+.sky{
+    position: absolute;
+    top: 0px;
+    width: 1360px;
+    height: 220px;
+    background-color:#30b1e0;
+}
+
+.sun{
+    position: absolute;
+	top:50px;
+    left:-100%;
+	width:70px;
+	height:70px;
+	border-radius:50%;	
+	background:white;
+	box-shadow: 0px 0px 40px 15px white;  
+}
+.sunStartMove{
+    animation:sunMove 60s linear;
+}
+@keyframes sunMove{
+    from{left:-6%;}
+    to{left:92%}
+}
+
+.mount{
+    width: 40%;
+    height: 37%;
+    left:30%;
+    position: absolute;
+}
+
+.cloud{
+    position: absolute;
+    width: 13%;
+    left:10%;
+    top: 10px;
+}
+.cloud2{
+    position: absolute;
+    width: 13%;
+    left: 70%;
+    top: 20px;
+}
